@@ -25,13 +25,13 @@ export class UIService {
 					},
 					animation: {
 						enterFrom: {
-							translateY: 500,
-							duration: 300,
+							translateY: 699,
+							duration: 500,
 							curve: DEFAULT_ANIMATION_CURVE,
 						},
 						exitTo: {
-							translateY: 500,
-							duration: 300,
+							translateY: 699,
+							duration: 500,
 							curve: DEFAULT_ANIMATION_CURVE,
 						},
 					},

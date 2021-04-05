@@ -151,3 +151,8 @@ This is where the vast majority of your CSS code goes. */
   border-top-color: #222222;
   margin: 32 0;
 }
+
+.loading-text {
+  color: #ffffff;
+  font-size: 20;
+}

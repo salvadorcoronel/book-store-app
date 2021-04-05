@@ -24,7 +24,8 @@ const routes: Routes = [
 @NgModule({
   imports: [NativeScriptRouterModule.forRoot(routes, {
     useHash: true,
-    enableTracing: true
+    enableTracing: true,
+    initialNavigation: 'disabled'
   })],
   exports: [NativeScriptRouterModule],
 })
