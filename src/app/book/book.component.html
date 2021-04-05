@@ -1,0 +1,40 @@
+<ActionBar class="bg-black--light" title="">
+  <Label text="Book Detail" class="color-text--light"></Label>
+  <ActionItem ios.position="right">
+    <GridLayout width="60">
+      <Label class="action-bar--item" text="Done" (loaded)="onActionBarItemLoaded($event)" (tap)="closeBaseModal()"></Label>
+    </GridLayout>
+  </ActionItem>
+</ActionBar>
+
+<ScrollView>
+  <StackLayout class="book-content bg-black--dark">
+    <Image class="book-content--image" src="~/images/book-2-detail.png" stretch="aspectFit"></Image>
+    <StackLayout class="book-detail">
+      <Label class="book-detail--title" text="Piense y Hágase Rico"></Label>
+      <Label class="book-detail--author" text="Norman Vincent Peale"></Label>
+      <Button class="book-detail--price" text="BUY | S/.29.90" (tap)="buyBook()"></Button>
+
+      <Label class="separator"></Label>
+
+      <Label class="book-detail--subtitle" text="Publisher Description"></Label>
+      <Label class="book-detail--description"
+        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sint eos minus, ab numquam expedita deserunt? Dolor dolores reiciendis, sed, quae nisi temporibus laudantium blanditiis culpa maxime ipsum magnam repellendus"></Label>
+
+      <Label class="separator"></Label>
+
+      <GridLayout rows="auto,auto,auto" columns="*,*,*">
+        <Label row="0" col="0" class="book-info--title" text="Released"></Label>
+        <Label row="0" col="1" class="book-info--title" text="Language"></Label>
+        <Label row="0" col="2" class="book-info--title" text="Length"></Label>
+        <Label row="1" col="0" class="book-info--subtitle" text="2018"></Label>
+        <Label row="1" col="1" class="book-info--subtitle" text="es"></Label>
+        <Label row="1" col="2" class="book-info--subtitle" text="200"></Label>
+        <Label row="2" col="0" class="book-info--description" text="23 April"></Label>
+        <Label row="2" col="1" class="book-info--description" text="Spanish"></Label>
+        <Label row="2" col="2" class="book-info--description" text="Pages"></Label>
+
+      </GridLayout>
+    </StackLayout>
+  </StackLayout>
+</ScrollView>

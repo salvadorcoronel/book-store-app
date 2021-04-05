@@ -1,0 +1,40 @@
+<ActionBar class="bg-black--light" title="">
+  <Label text="Book Store" class="color-text--light"></Label>
+  <ActionItem ios.position="right">
+    <GridLayout width="60">
+      <Label class="action-bar--item" text="Help" (loaded)="onActionBarItemLoaded($event)"></Label>
+    </GridLayout>
+  </ActionItem>
+</ActionBar>
+
+<GridLayout class="bg-black--dark" *ngIf="books">
+  <ListView [items]="books" (itemTap)="onItemTap($event)">
+    <ng-template let-book="item">
+      <GridLayout rows="*" columns="*,24,*" class="h-mp-0 book-store--row">
+        <!--<Label [nsRouterLink]="['/item', book.id]" [text]="book.title"></Label>-->
+        <StackLayout class="book-store--item bg-black--light h-mp-0" row="0" column="0">
+          <Image class="book-image" stretch="aspectFit" src="~/images/{{book[0].image}}"></Image>
+          <Label [text]="book[0].title" class="book-title"></Label>
+          <Label [text]="book[0].author" class="book-author"></Label>
+          <Label class="book-price" textWrap="true">
+            <FormattedString>
+              <Span [text]="book[0].currency"></Span>
+              <Span [text]="book[0].price"></Span>
+            </FormattedString>
+          </Label>
+        </StackLayout>
+        <StackLayout class="book-store--item bg-black--light h-mp-0" row="0" column="2">
+          <Image class="book-image" stretch="aspectFit" src="~/images/{{book[1].image}}"></Image>
+          <Label [text]="book[1].title" class="book-title"></Label>
+          <Label [text]="book[1].author" class="book-author"></Label>
+          <Label class="book-price" textWrap="true">
+            <FormattedString>
+              <Span [text]="book[1].currency"></Span>
+              <Span [text]="book[1].price"></Span>
+            </FormattedString>
+          </Label>
+        </StackLayout>
+      </GridLayout>
+    </ng-template>
+  </ListView>
+</GridLayout>

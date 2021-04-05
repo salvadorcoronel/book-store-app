@@ -3,3 +3,151 @@
 
 /* Place any CSS rules you want to apply on both iOS and Android here.
 This is where the vast majority of your CSS code goes. */
+
+.action-bar--item {
+  color: #6BD35F;
+  text-align: right;
+  height: 100%;
+  font-size: 14;
+  margin: 0;
+  padding: 0;
+}
+
+.action-bar--item-left {
+  color: #6BD35F;
+  text-align: left;
+  height: 100%;
+  font-size: 14;
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
+
+.bg-black--dark {
+    background-color: #000000;
+}
+
+.bg-black--light {
+    background-color: #1F2428;
+}
+
+.color-text--dark {
+    color: #99999F;
+}
+
+.color-text--light {
+    color: #ffffff;
+}
+
+.color-text--green {
+    color: #6BD35F;
+}
+
+.h-mp-0 {
+  margin: 0;
+  padding: 0;
+}
+
+.book-store--row {
+  padding: 24 12;
+}
+
+.book-store--item {
+  border-radius: 7;
+}
+
+.book-image {
+  border-top-left-radius: 7;
+  border-top-right-radius: 7;
+}
+
+.book-title {
+  color: #ffffff;
+  font-size: 18;
+  text-wrap: true;
+  text-align: center;
+  height: 56;
+}
+
+.book-author {
+  color: #99999F;
+  font-size: 14;
+  text-wrap: true;
+  text-align: center;
+  padding: 0;
+}
+
+.book-price {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16;
+  text-align: center;
+  margin-bottom: 4;
+}
+
+/* Book: detail */
+.book-detail {
+  padding: 0 12;
+  margin-bottom: 48;
+}
+
+.book-content--image{
+  
+}
+
+.book-detail--title{
+  margin-top: 24;
+  font-size: 24;
+  color: #ffffff;
+  text-align: center;
+}
+.book-detail--author{
+  font-size: 20;
+  color: #99999F;
+  text-align: center;
+}
+.book-detail--price{
+  background-color: #1F2428;
+  color: #6BD35F;
+  height: 50;
+  width: 200;
+  border-radius: 24;
+  margin-top: 12;
+  font-size: 18;
+}
+.book-detail--subtitle{
+  font-size: 20;
+  color: #ffffff;
+  font-weight: 500;
+}
+.book-detail--description{
+  font-size: 18;
+  color: #99999F;
+  text-wrap: true;
+}
+.book-info--title{
+  text-align: center;
+  font-size: 16;
+  color: #99999F;
+  text-transform: uppercase;
+}
+.book-info--subtitle{
+  font-weight: 500;
+  text-align: center;
+  font-size: 24;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.book-info--description{
+  text-align: center;
+  font-size: 14;
+  color: #ffffff;
+}
+
+.separator {
+  height: 2;
+  border-top-width: 1;
+  border-top-color: #222222;
+  margin: 32 0;
+}
